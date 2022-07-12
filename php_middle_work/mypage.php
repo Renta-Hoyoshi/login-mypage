@@ -77,8 +77,8 @@ if(!empty($_SESSION['id']) && !empty($_SESSION['login_keep'])) {
 </head>
 <body>
   <header>
-      <img src="4eachblog_logo.jpg">
-      <div class="logout"><a href="logout.php">ログアウト</a></div>
+    <img src="4eachblog_logo.jpg">
+    <div class="logout"><a href="logout.php">ログアウト</a></div>
   </header>
 
   <main>

@@ -16,8 +16,8 @@ if(empty($_POST['from_mypage'])) {
 </head>
 <body>
   <header>
-      <img src="4eachblog_logo.jpg">
-      <div class="logout"><a href="login.php">ログアウト</a></div>
+    <img src="4eachblog_logo.jpg">
+    <div class="logout"><a href="login.php">ログアウト</a></div>
   </header>
 
   <main>

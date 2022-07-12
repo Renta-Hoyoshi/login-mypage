@@ -26,43 +26,43 @@ move_uploaded_file($temp_pic_name,'./image/'.$original_pic_name);
 <body>
   
   <header>
-      <img src="4eachblog_logo.jpg">
+    <img src="4eachblog_logo.jpg">
   </header>
 
   <main>  
-      <div class="confirm_contents">
-          <h2>会員登録 確認</h2>
+    <div class="confirm_contents">
+        <h2>会員登録 確認</h2>
           
-          <p>こちらの内容で登録しても宜しいでしょうか？</p>
+        <p>こちらの内容で登録しても宜しいでしょうか？</p>
           
-          <div class="main_contents">
-              <ul>
-                  <li>氏名：<?php echo $_POST['name'];?></li>
-                  <li>メール：<?php echo $_POST['email'];?></li>
-                  <li>パスワード：<?php echo $_POST['password'];?></li>
-                  <li>プロフィール写真：<?php echo $original_pic_name;?></li>
-                  <li>コメント：<?php echo $_POST['comments'];?></li>
-              </ul>
-          </div>
-         <div class="buttons"> 
+        <div class="main_contents">
+          <ul>
+            <li>氏名：<?php echo $_POST['name'];?></li>
+            <li>メール：<?php echo $_POST['email'];?></li>
+            <li>パスワード：<?php echo $_POST['password'];?></li>
+            <li>プロフィール写真：<?php echo $original_pic_name;?></li>
+            <li>コメント：<?php echo $_POST['comments'];?></li>
+          </ul>
+        </div>
+        <div class="buttons"> 
           <form action="register.php" >
-              <div class="back_button">
-                <input type="submit" class="button1" value="戻って修正する">
-              </div>
+            <div class="back_button">
+              <input type="submit" class="button1" value="戻って修正する">
+            </div>
           </form>
           
           <form action="register_insert.php" method="post">
-              <div class="register_button">
-                <input type="submit" class="button2" value="登録する">
-                <input type="hidden" value="<?php echo $_POST['name'];?>" name="name">
-                <input type="hidden" value="<?php echo $_POST['email'];?>" name="email">
-                <input type="hidden" value="<?php echo $_POST['password'];?>" name="password">
-                <input type="hidden" value="<?php echo $path_filename;?>" name="path_filename">
-                <input type="hidden" value="<?php echo $_POST['comments'];?>" name="comments">
-              </div>
+            <div class="register_button">
+              <input type="submit" class="button2" value="登録する">
+              <input type="hidden" value="<?php echo $_POST['name'];?>" name="name">
+              <input type="hidden" value="<?php echo $_POST['email'];?>" name="email">
+              <input type="hidden" value="<?php echo $_POST['password'];?>" name="password">
+              <input type="hidden" value="<?php echo $path_filename;?>" name="path_filename">
+              <input type="hidden" value="<?php echo $_POST['comments'];?>" name="comments">
+            </div>
           </form>
-          </div>
-      </div>  
+        </div>
+    </div>  
   </main>
   
   <footer>
