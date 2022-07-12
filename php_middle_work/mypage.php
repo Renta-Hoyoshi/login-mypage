@@ -102,7 +102,7 @@ if(!empty($_SESSION['id']) && !empty($_SESSION['login_keep'])) {
         <form action="mypage_edit.php" method="post" class="form_center">
         <input type="hidden" value="<?php echo rand(1,10);?>" name="from_mypage">
         <div class="edit_mypage">
-            <input type="submit" class="button" value="編集する" >
+          <input type="submit" class="button" value="編集する" >
         </div>
         </form>  
       </div>
